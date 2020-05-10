@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="jquery-3.5.0.min.js"></script> -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <title>Calculadora de horas</title>
+</head>
+
+<body>
+
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="index.html">Agregar Hora</a>
+        <a href="verHoras.html">Ver Horas</a>
+
+    </div>
+    <div class="main">
+
+        <div class="header">
+            <h2>Contar Horas</h2>
+        </div>
+
+        <h3 class="decriptions">Agrega las horas trabajadas en un proyecto.</h3>
+        <div class="form__group ">
+            <div class="times" id="hourG">
+                <input type="number" class="form__input" id="hourInput" placeholder="Horas" required="" />
+                <label for="hourInput" class="form__label">Horas</label>
+            </div>
+            <div class="times" id="minsG">
+                <input type="number" class="form__input" id="minuteInput" placeholder="Minutos" required="" />
+                <label for="minuteInput" class="form__label">Minutos</label>
+            </div>
+            <div class="times" id="description">
+                <input type="text" class="form__input" id="descripcion" placeholder="Descripción" required="" />
+                <label for="descripcion" class="form__label">Decripcion</label>
+            </div>
+
+        </div>
+
+        <div class="select-box">
+
+            <label for="select_projects" class="select"><span class="label-desc">Choose Proyect</span>
+            </label>
+            <select onchange="val()" id="select_projects" name="selectProjects" class="select"></select>
+
+        </div>
+
+        <a id = "timeButton" class="btn btn-blue">Agregar Horas</a>
+
+        <p class="barra"></p>
+
+        <h3 class="decriptions">Crear un nuevo poyecto</h3>
+        <div class="form__group">
+            <div class="times">
+                <input type="text" class="form__input" id="name" placeholder="Nuevo Proyecto" required="" />
+                <label for="project" class="form__label">Nuevo Proyecto</label>
+            </div>
+        </div>
+        <a href="#" class="btn btn-blue" id = "addButton" >Agregar Proyecto</a>
+        
+
+    </div>
+    <script type="text/javascript">
+        const WEBPAGE = 1;</script>
+    <script src="script.js"></script> 
+</body>
+
+</html>

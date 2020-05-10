@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="jquery-3.5.0.min.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <title>Calculadora de horas</title>
+</head>
+
+<body>
+    
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="index.html">Agregar Hora</a>
+        <a href="verHoras.html">Ver Horas</a>
+    </div>
+    <div class="main">
+
+    <div class="header">
+        <h2>Contar Horas</h2>
+    </div>
+
+    <h3 class="decriptions">Ver horas por proyecto.</h3>
+
+    <div class="select-box" style="margin-top: 30px;">
+
+        <label for="select_projects" class="select"><span class="label-desc">Seleccionar Proyecto</span>
+        </label>
+        <select onchange="val()" id="select_projects" class="select"></select>
+    </div>
+
+    <div class="content">
+        <ul id="time-list"></ul>
+    </div>
+
+
+    <script type="text/javascript">
+        const WEBPAGE = 0;</script>
+    <script src="script.js"></script>   
+
+</body>
+</html>
